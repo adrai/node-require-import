@@ -1,7 +1,7 @@
 {
   "name": "node-require-import",
   "version": "1.0.0",
-  "type": "cjs",
+  "type": "commonjs",
   "main": "./cjs/entry.js",
   "exports": {
     ".": {
