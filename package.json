@@ -1,0 +1,20 @@
+{
+  "name": "node-require-import",
+  "version": "1.0.0",
+  "type": "cjs",
+  "main": "./cjs/entry.js",
+  "exports": {
+    ".": {
+      "require": "./cjs/entry.js",
+      "default": "./esm/entry.js"
+    }
+  },
+  "module": "./esm/entry.js",
+  "scripts": {
+    "cjs": "rm -rf cjs && mkdir cjs && ascjs esm cjs --no-default",
+    "build": "npm run cjs"
+  },
+  "devDependencies": {
+    "ascjs": "3.1.2"
+  }
+}

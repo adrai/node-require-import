@@ -1,0 +1,6 @@
+{
+  "type": "cjs",
+  "dependencies": {
+    "node-require-import": "file:../.."
+  }
+}
