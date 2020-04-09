@@ -33,3 +33,11 @@ node --experimental-modules index
 
 - Node.js 12+ supports ESM natively behind the flag --experimental-modules
 - Node.js 13.2.0+ supports native ESM without that flag.
+
+
+
+# Deno used like this
+
+```javascript
+import { hello } from 'https://raw.githubusercontent.com/adrai/node-require-import/master/index.js'
+```
