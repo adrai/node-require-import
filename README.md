@@ -39,5 +39,5 @@ node --experimental-modules index
 # Deno used like this
 
 ```javascript
-import { hello } from 'https://raw.githubusercontent.com/adrai/node-require-import/master/index.js'
+import { hello } from 'https://cdn.jsdelivr.net/gh/adrai/node-require-import/index.js'
 ```
