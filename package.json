@@ -1,17 +1,17 @@
 {
   "name": "node-require-import",
   "version": "1.0.0",
-  "type": "commonjs",
-  "main": "./cjs/entry.js",
+  "type": "module",
+  "main": "./cjs/index.js",
   "exports": {
     ".": {
-      "require": "./cjs/entry.js",
-      "default": "./esm/entry.js"
+      "require": "./cjs/index.js",
+      "default": "./index.js"
     }
   },
-  "module": "./esm/entry.js",
+  "module": "./index.js",
   "scripts": {
-    "cjs": "rm -rf cjs && mkdir cjs && ascjs esm cjs --no-default",
+    "cjs": "rm -rf cjs && mkdir cjs && ascjs --no-default --ignore=../../cjs,../../test,../../node_modules . cjs",
     "build": "npm run cjs"
   },
   "devDependencies": {
